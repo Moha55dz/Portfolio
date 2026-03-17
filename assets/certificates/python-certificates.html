@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Certificates</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .cert-view-section {
+            padding: 50px 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .cert-images {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            align-items: center;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .cert-images img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            border: 1px solid var(--glass-border);
+            transition: var(--transition-smooth);
+        }
+        .cert-images img:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+        }
+        .back-btn {
+            margin-bottom: 3rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        .level-title {
+            color: var(--primary-color);
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            text-align: left;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section class="cert-view-section">
+        <div class="container" style="text-align: center;">
+            <a href="../../index.html#certificates" class="btn secondary back-btn">
+                <i data-lucide="arrow-left"></i> Back to Portfolio
+            </a>
+            <h2 class="section-title">Python Completion Certificates</h2>
+            
+            <div class="cert-images">
+                <div>
+                    <h3 class="level-title">Level 1</h3>
+                    <img src="Python level 1.jpeg" alt="Python Level 1 Certificate">
+                </div>
+                <div>
+                    <h3 class="level-title">Level 3</h3>
+                    <img src="Python level 3.jpeg" alt="Python Level 3 Certificate">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS Files -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
