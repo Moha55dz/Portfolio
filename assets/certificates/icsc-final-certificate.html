@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICSC Final Round Certificate</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .cert-view-section {
+            padding: 50px 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .cert-images {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            align-items: center;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .cert-images iframe {
+            width: 100%;
+            height: 900px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            border: 1px solid var(--glass-border);
+            transition: var(--transition-smooth);
+        }
+        .cert-images iframe:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+        }
+        .back-btn {
+            margin-bottom: 3rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        
+        @media (max-width: 768px) {
+            .cert-images iframe {
+                height: 600px;
+            }
+        }
+        @media (max-width: 480px) {
+            .cert-images iframe {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="cert-view-section">
+        <div class="container" style="text-align: center;">
+            <a href="../../index.html#certificates" class="btn secondary back-btn">
+                <i data-lucide="arrow-left"></i> Back to Portfolio
+            </a>
+            <h2 class="section-title">ICSC Final Round Certificate</h2>
+            
+            <div class="cert-images">
+                <div>
+                    <iframe src="ICSC-FinalRound-Certificate.pdf" title="ICSC Final Round Certificate"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS Files -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
