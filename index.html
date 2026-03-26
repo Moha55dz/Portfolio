@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
     <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@0.474.0/dist/umd/lucide.min.js"></script>
 </head>
 
 <body>
@@ -296,6 +296,12 @@
 
     <!-- JS Files -->
     <script src="js/main.js"></script>
+    <script>
+        // Ensure Lucide icons are initialized after script load
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+    </script>
 </body>
 
 </html>
